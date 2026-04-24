@@ -1,3 +1,14 @@
 # IntelliJ
 .idea/
 *.iml
+
+*.log
+*.db
+data/
+logs/
+config_backups/
+*.sqlite
+*.pem
+*.crt
+*.key
+plex/
