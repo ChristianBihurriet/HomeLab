@@ -1,0 +1,45 @@
+- Infrastructure:
+    - Pi-hole:
+        icon: pi-hole.png
+        href: http://homelab.local:8080/admin
+        description: DNS & ad blocking
+
+    - Nginx Proxy Manager:
+        icon: nginx.png
+        href: http://homelab.local:81
+        description: Reverse proxy
+
+    - Portainer:
+        icon: portainer.png
+        href: https://homelab.local:9443
+        description: Docker management
+
+- Monitoring:
+    - Grafana:
+        icon: grafana.png
+        href: http://homelab.local:3000
+        description: Metrics dashboards
+
+    - Prometheus:
+        icon: prometheus.png
+        href: http://homelab.local:9090
+        description: Metrics collector
+
+- Networking:
+    - Mosquitto:
+        icon: mqtt.png
+        description: MQTT broker
+
+    - Tailscale:
+        icon: tailscale.png
+        href: https://login.tailscale.com/admin/machines
+        description: VPN network
+- System:
+    - Docker:
+        icon: docker.png
+        description: Docker containers
+- Media:
+    - Plex:
+        icon: plex.png
+        href: http://homelab.local:32400/web
+        description: Media server

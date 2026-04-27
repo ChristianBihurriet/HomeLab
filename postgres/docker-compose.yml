@@ -1,0 +1,19 @@
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:16
+    networks:
+      - homelab-net
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER:-portfolio_user}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-REDACTED_PORTFOLIO_PLACEHOLDER}"
+      POSTGRES_DB: homelabdb
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+networks:
+  homelab-net:
+    external: true

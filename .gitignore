@@ -12,3 +12,24 @@ config_backups/
 *.crt
 *.key
 plex/
+
+# Runtime data and local state
+**/data/
+**/log/
+**/logs/
+**/etc-pihole/
+**/etc-dnsmasq.d/
+**/letsencrypt/
+
+# Local secrets and overrides
+.codex
+.env
+.env.*
+!.env.example
+*secret*
+*credentials*
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+

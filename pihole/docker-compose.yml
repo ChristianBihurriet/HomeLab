@@ -1,0 +1,30 @@
+services:
+  pihole:
+    container_name: pihole
+    image: pihole/pihole:latest
+    hostname: pihole
+    networks:
+      - homelab-net
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "8080:80"
+    environment:
+      TZ: "UTC"
+      WEBPASSWORD: "${PIHOLE_WEBPASSWORD:-REDACTED_PORTFOLIO_PLACEHOLDER}"
+    volumes:
+      - ./etc-pihole:/etc/pihole
+      - ./etc-dnsmasq.d:/etc/dnsmasq.d
+    restart: unless-stopped
+
+networks:
+  homelab-net:
+    external: true
+    labels:
+      - homepage.group=Infrastructure
+      - homepage.name=Pi-hole
+      - homepage.icon=pihole.png
+      - homepage.href=http://homelab.local:8080/admin
+      - homepage.description=DNS Ad Blocker
+      - homepage.widget.type=pihole
+      - homepage.widget.url=http://pihole:80

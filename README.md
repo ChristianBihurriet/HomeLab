@@ -7,6 +7,33 @@ Infraestructura de homelab diseñada para simular un entorno real de DevOps,
 incluyendo despliegue de servicios, monitorización, networking y automatización.
 
 El objetivo es aprender y aplicar prácticas reales de backend + infraestructura.
+---
+
+## 🔐 Nota sobre la sanitización
+
+Este repositorio contiene una versión **sanitizada** de mi homelab personal.
+
+No está pensado para ser clonado y ejecutado directamente en producción. Su objetivo es mostrar la arquitectura, la organización de servicios y las decisiones técnicas.
+
+Para proteger la seguridad del entorno original:
+
+- Las contraseñas reales han sido reemplazadas por valores de ejemplo o variables de entorno  
+- Los nombres de host privados han sido sustituidos por `homelab.local`  
+- Las direcciones IP internas han sido reemplazadas por nombres de servicio  
+- No se incluyen volúmenes de datos, logs, bases de datos ni certificados  
+- Algunas configuraciones han sido simplificadas para facilitar su comprensión  
+
+---
+## ⚠️ Importante
+
+Este repositorio representa la estructura y el diseño del entorno, no una copia exacta del sistema en ejecución.
+
+Para un despliegue real, es necesario adaptar:
+- variables de entorno
+- configuración de red
+- almacenamiento persistente
+- credenciales seguras
+---
 ## 🏗️ Arquitectura
 
 ```text
