@@ -52,6 +52,26 @@ Servicios Docker
  └─ Pi-hole (DNS)
 ```
 ---
+## 📸 Demo visual
+
+### 🧭 Dashboard central (Homepage)
+![Homepage](./screenshots/homepage.png)
+
+### 📊 Monitoring (Grafana)
+![Grafana](./screenshots/grafana.png)
+
+### 🔎 Prometheus Targets
+![Prometheus](./screenshots/prometheus-targets.png)
+
+### 🐳 Gestión de contenedores (Portainer)
+![Portainer](./screenshots/portainer.png)
+
+### 🌐 Reverse Proxy (Nginx Proxy Manager)
+![Nginx](./screenshots/nginx.png)
+
+### 🛡️ DNS & Ad-block (Pi-hole)
+![Pihole](./screenshots/pihole.png)
+---
 ## 📁 Estructura del proyecto
 
 ```text
